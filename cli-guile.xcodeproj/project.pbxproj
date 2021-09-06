@@ -14,17 +14,19 @@
 		DA4F1A5726E6147C00952E8F /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4F1A5626E6147C00952E8F /* libintl.a */; };
 		DA4F1A7326E6149300952E8F /* libffi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4F1A7226E6149300952E8F /* libffi.tbd */; };
 		DA4F1A7526E614AC00952E8F /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4F1A7426E614AC00952E8F /* libiconv.tbd */; };
+		DA4F1AC326E635A500952E8F /* init.scm in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA4F1AC226E632B300952E8F /* init.scm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		DA4F1A4326E611D200952E8F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				DA4F1AC326E635A500952E8F /* init.scm in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -54,6 +56,7 @@
 		DA4F1A7126E6148C00952E8F /* libffi.info */ = {isa = PBXFileReference; lastKnownFileType = text; path = libffi.info; sourceTree = "<group>"; };
 		DA4F1A7226E6149300952E8F /* libffi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libffi.tbd; path = usr/lib/libffi.tbd; sourceTree = SDKROOT; };
 		DA4F1A7426E614AC00952E8F /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		DA4F1AC226E632B300952E8F /* init.scm */ = {isa = PBXFileReference; lastKnownFileType = text; path = init.scm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				DA4F1A4826E611D200952E8F /* main.m */,
+				DA4F1AC226E632B300952E8F /* init.scm */,
 			);
 			path = "cli-guile";
 			sourceTree = "<group>";
