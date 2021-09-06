@@ -10,14 +10,10 @@
 ; (define-key queue-panel-map "x" 'delete-track)
 ; (define-key queue-panel-map "x" 'delete-track)
 
-(define delete-track (lambda () (display "defined first!\n")))
-
-(define queue-panel-map '(
-  ("x" . delete-track)
-  ("y" . paul/foo)
-  ))
-
-(define delete-track (lambda () (display "track deleted!\n")))
+(define delete-track
+  (lambda ()
+    (display "defined first!\n")
+    (next-track "iron maiden")))
 
 
 ;; in user's config:
@@ -26,3 +22,7 @@
     (delete-track)
     (display "paul's scary thing\n"))))
 
+(define queue-panel-map `(
+  ("x" . ,delete-track)
+  ("y" . ,paul/foo)
+  ))

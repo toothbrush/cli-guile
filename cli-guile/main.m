@@ -80,7 +80,7 @@ int main(int argc, const char * argv[]) {
     scm_display(x, scm_current_output_port());
     scm_newline(scm_current_output_port());
 
-    //scm_call_0(x);
+    scm_call_0(x);
 
 
     return 0;
