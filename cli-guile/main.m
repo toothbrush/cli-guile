@@ -73,5 +73,15 @@ int main(int argc, const char * argv[]) {
     NSLog(@"%@", s);
 
     scm_c_primitive_load("./init.scm");
+
+    SCM x = scm_assoc_ref(scm_c_eval_string("queue-panel-map"),
+                          scm_from_locale_string("x"));
+
+    scm_display(x, scm_current_output_port());
+    scm_newline(scm_current_output_port());
+
+    //scm_call_0(x);
+
+
     return 0;
 }

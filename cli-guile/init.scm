@@ -10,9 +10,11 @@
 ; (define-key queue-panel-map "x" 'delete-track)
 ; (define-key queue-panel-map "x" 'delete-track)
 
+(define delete-track (lambda () (display "defined first!\n")))
+
 (define queue-panel-map '(
-  ("x" . 'delete-track)
-  ("y" . 'paul/foo)
+  ("x" . delete-track)
+  ("y" . paul/foo)
   ))
 
 (define delete-track (lambda () (display "track deleted!\n")))
