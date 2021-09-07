@@ -40,16 +40,10 @@ static void* register_functions (void* data)
 {
     scm_c_define_gsubr ("next-track", 1, 0, 0, &next_track_example);
     SCM test = scm_c_eval_string("(+ 3 5)");
-    scm_c_eval_string("(define foo 4)");
-    scm_c_eval_string("(define bar 9)");
-    scm_c_eval_string("(define key \"blabla\")");
     int foo = scm_to_int(test);
     printf("int foo = %d\n", foo);
     scm_c_eval_string("(next-track \"foo\")");
     scm_c_eval_string("(begin (display 'HelloWorld) (newline))");
-
-
-
 
     return NULL;
 }
@@ -62,26 +56,31 @@ void run_guile(void) {
 
 
 int main(int argc, const char * argv[]) {
+    run_guile();
     @autoreleasepool {
         NSLog(@"Hello, World!");
-        run_guile();
     }
 
     NSString* s = doshellscript(@"/bin/bash", [NSArray arrayWithObjects:@"-c", @"pwd", nil]);
     NSLog(@"%@", s);
-    s = doshellscript(@"/bin/bash", [NSArray arrayWithObjects:@"-c", @"ls -l", nil]);
-    NSLog(@"%@", s);
+//    s = doshellscript(@"/bin/bash", [NSArray arrayWithObjects:@"-c", @"ls -l", nil]);
+//    NSLog(@"%@", s);
 
+    // beware to use
+    //     let path = NSBundle.mainBundle().bundleURL.URLByDeletingLastPathComponent!.path!
+    // in real life.
     scm_c_primitive_load("./init.scm");
 
-    SCM x = scm_assoc_ref(scm_c_eval_string("queue-panel-map"),
+    scm_display(scm_c_lookup("queue-panel-map"), scm_current_output_port());
+    scm_newline(scm_current_output_port());
+
+    SCM x = scm_assoc_ref(scm_variable_ref(scm_c_lookup("queue-panel-map")),
                           scm_from_locale_string("x"));
 
     scm_display(x, scm_current_output_port());
     scm_newline(scm_current_output_port());
 
     scm_call_0(x);
-
 
     return 0;
 }

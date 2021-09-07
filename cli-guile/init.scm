@@ -1,3 +1,4 @@
+;(define-module (spotiqueue init))
 
 (display "this is the init.scm file")
 (newline)
