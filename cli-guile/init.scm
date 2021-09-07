@@ -26,8 +26,8 @@
     (display "paul's scary thing\n"))))
 
 (define queue-panel-map '(
-  ("x" . delete-track)
-  ("y" . paul/foo)
+  ("M-x" . delete-track)
+  ("C-y" . paul/foo)
   ("z" . (lambda () (display "z pressed\n")))
   ("zz" . another-thing)))
 

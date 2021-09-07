@@ -61,6 +61,10 @@ void key_pressed(const char* key) {
     scm_display(action, scm_current_output_port());
     scm_newline(scm_current_output_port());
 
+    if(scm_is_false_or_nil(action)) {
+        printf("key not bound, bye.\n");
+        return;
+    }
     scm_display(scm_eval(action, scm_current_module()), scm_current_output_port());
     scm_newline(scm_current_output_port());
 
