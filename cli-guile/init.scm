@@ -1,8 +1,10 @@
 ;(define-module (spotiqueue init))
 
-(display "this is the init.scm file")
-(newline)
+(begin
+  (display "this is the init.scm file")
+  (newline))
 
+;; Example of calling a Spotiqueue function:
 (next-track "billie eilish")
 
 (define queue-panel-map)
@@ -23,7 +25,12 @@
     (delete-track)
     (display "paul's scary thing\n"))))
 
-(define queue-panel-map `(
-  ("x" . ,delete-track)
-  ("y" . ,paul/foo)
-  ))
+(define queue-panel-map '(
+  ("x" . delete-track)
+  ("y" . paul/foo)
+  ("z" . (lambda () (display "z pressed\n")))
+  ("zz" . another-thing)))
+
+(define (another-thing)
+  (begin
+    (display "whee another thing, defined later!\n")))

@@ -54,6 +54,19 @@ void run_guile(void) {
     scm_with_guile(&register_functions, NULL);
 }
 
+void key_pressed(const char* key) {
+    SCM action = scm_assoc_ref(scm_variable_ref(scm_c_lookup("queue-panel-map")),
+                               scm_from_locale_string(key));
+
+    scm_display(action, scm_current_output_port());
+    scm_newline(scm_current_output_port());
+
+    scm_display(scm_eval(action, scm_current_module()), scm_current_output_port());
+    scm_newline(scm_current_output_port());
+
+    scm_call_0(scm_eval(action, scm_current_module()));
+
+}
 
 int main(int argc, const char * argv[]) {
     run_guile();
@@ -74,13 +87,9 @@ int main(int argc, const char * argv[]) {
     scm_display(scm_c_lookup("queue-panel-map"), scm_current_output_port());
     scm_newline(scm_current_output_port());
 
-    SCM x = scm_assoc_ref(scm_variable_ref(scm_c_lookup("queue-panel-map")),
-                          scm_from_locale_string("x"));
-
-    scm_display(x, scm_current_output_port());
-    scm_newline(scm_current_output_port());
-
-    scm_call_0(x);
-
+    key_pressed("x");
+    key_pressed("y");
+    key_pressed("z");
+    key_pressed("zz");
     return 0;
 }
