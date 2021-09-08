@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DA4F1A4926E611D200952E8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4F1A4826E611D200952E8F /* main.m */; };
-		DA4F1A5126E613D100952E8F /* libgmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4F1A5026E613D100952E8F /* libgmp.a */; };
-		DA4F1A5326E613F800952E8F /* libgc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4F1A5226E613F800952E8F /* libgc.a */; };
-		DA4F1A5526E6144B00952E8F /* libunistring.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4F1A5426E6144B00952E8F /* libunistring.a */; };
-		DA4F1A5726E6147C00952E8F /* libintl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4F1A5626E6147C00952E8F /* libintl.a */; };
 		DA4F1A7326E6149300952E8F /* libffi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4F1A7226E6149300952E8F /* libffi.tbd */; };
 		DA4F1A7526E614AC00952E8F /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4F1A7426E614AC00952E8F /* libiconv.tbd */; };
 		DA4F1AC326E635A500952E8F /* init.scm in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA4F1AC226E632B300952E8F /* init.scm */; };
@@ -33,30 +29,10 @@
 /* Begin PBXFileReference section */
 		DA4F1A4526E611D200952E8F /* cli-guile */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cli-guile"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4F1A4826E611D200952E8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DA4F1A5026E613D100952E8F /* libgmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmp.a; path = ../../../../usr/local/Cellar/gmp/6.2.1/lib/libgmp.a; sourceTree = "<group>"; };
-		DA4F1A5226E613F800952E8F /* libgc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgc.a; path = "../../../../usr/local/Cellar/bdw-gc/8.0.4_2/lib/libgc.a"; sourceTree = "<group>"; };
-		DA4F1A5426E6144B00952E8F /* libunistring.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libunistring.a; path = ../../../../usr/local/Cellar/libunistring/0.9.10/lib/libunistring.a; sourceTree = "<group>"; };
-		DA4F1A5626E6147C00952E8F /* libintl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libintl.a; path = ../../../../usr/local/Cellar/gettext/0.21/lib/libintl.a; sourceTree = "<group>"; };
-		DA4F1A5926E6148C00952E8F /* LICENSE-BUILDTOOLS */ = {isa = PBXFileReference; lastKnownFileType = text; path = "LICENSE-BUILDTOOLS"; sourceTree = "<group>"; };
-		DA4F1A5A26E6148C00952E8F /* INSTALL_RECEIPT.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = INSTALL_RECEIPT.json; sourceTree = "<group>"; };
-		DA4F1A5B26E6148C00952E8F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		DA4F1A5D26E6148C00952E8F /* libffi.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = libffi.rb; sourceTree = "<group>"; };
-		DA4F1A5E26E6148C00952E8F /* ChangeLog */ = {isa = PBXFileReference; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
-		DA4F1A6026E6148C00952E8F /* ffitarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ffitarget.h; sourceTree = "<group>"; };
-		DA4F1A6126E6148C00952E8F /* ffi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ffi.h; sourceTree = "<group>"; };
-		DA4F1A6226E6148C00952E8F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		DA4F1A6526E6148C00952E8F /* libffi.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = libffi.pc; sourceTree = "<group>"; };
-		DA4F1A6626E6148C00952E8F /* libffi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libffi.dylib; sourceTree = "<group>"; };
-		DA4F1A6726E6148C00952E8F /* libffi.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libffi.7.dylib; sourceTree = "<group>"; };
-		DA4F1A6826E6148C00952E8F /* libffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libffi.a; sourceTree = "<group>"; };
-		DA4F1A6C26E6148C00952E8F /* ffi_call.3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = ffi_call.3; sourceTree = "<group>"; };
-		DA4F1A6D26E6148C00952E8F /* ffi_prep_cif_var.3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = ffi_prep_cif_var.3; sourceTree = "<group>"; };
-		DA4F1A6E26E6148C00952E8F /* ffi_prep_cif.3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = ffi_prep_cif.3; sourceTree = "<group>"; };
-		DA4F1A6F26E6148C00952E8F /* ffi.3 */ = {isa = PBXFileReference; lastKnownFileType = text; path = ffi.3; sourceTree = "<group>"; };
-		DA4F1A7126E6148C00952E8F /* libffi.info */ = {isa = PBXFileReference; lastKnownFileType = text; path = libffi.info; sourceTree = "<group>"; };
 		DA4F1A7226E6149300952E8F /* libffi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libffi.tbd; path = usr/lib/libffi.tbd; sourceTree = SDKROOT; };
 		DA4F1A7426E614AC00952E8F /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		DA4F1AC226E632B300952E8F /* init.scm */ = {isa = PBXFileReference; lastKnownFileType = text; path = init.scm; sourceTree = "<group>"; };
+		ECC39ED126E869E900A55468 /* cli-guile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "cli-guile.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +42,6 @@
 			files = (
 				DA4F1A7526E614AC00952E8F /* libiconv.tbd in Frameworks */,
 				DA4F1A7326E6149300952E8F /* libffi.tbd in Frameworks */,
-				DA4F1A5726E6147C00952E8F /* libintl.a in Frameworks */,
-				DA4F1A5526E6144B00952E8F /* libunistring.a in Frameworks */,
-				DA4F1A5326E613F800952E8F /* libgc.a in Frameworks */,
-				DA4F1A5126E613D100952E8F /* libgmp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +68,7 @@
 		DA4F1A4726E611D200952E8F /* cli-guile */ = {
 			isa = PBXGroup;
 			children = (
+				ECC39ED126E869E900A55468 /* cli-guile.entitlements */,
 				DA4F1A4826E611D200952E8F /* main.m */,
 				DA4F1AC226E632B300952E8F /* init.scm */,
 			);
@@ -107,102 +80,8 @@
 			children = (
 				DA4F1A7426E614AC00952E8F /* libiconv.tbd */,
 				DA4F1A7226E6149300952E8F /* libffi.tbd */,
-				DA4F1A5826E6148C00952E8F /* 3.3_3 */,
-				DA4F1A5626E6147C00952E8F /* libintl.a */,
-				DA4F1A5426E6144B00952E8F /* libunistring.a */,
-				DA4F1A5226E613F800952E8F /* libgc.a */,
-				DA4F1A5026E613D100952E8F /* libgmp.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DA4F1A5826E6148C00952E8F /* 3.3_3 */ = {
-			isa = PBXGroup;
-			children = (
-				DA4F1A5926E6148C00952E8F /* LICENSE-BUILDTOOLS */,
-				DA4F1A5A26E6148C00952E8F /* INSTALL_RECEIPT.json */,
-				DA4F1A5B26E6148C00952E8F /* LICENSE */,
-				DA4F1A5C26E6148C00952E8F /* .brew */,
-				DA4F1A5E26E6148C00952E8F /* ChangeLog */,
-				DA4F1A5F26E6148C00952E8F /* include */,
-				DA4F1A6226E6148C00952E8F /* README.md */,
-				DA4F1A6326E6148C00952E8F /* lib */,
-				DA4F1A6926E6148C00952E8F /* share */,
-			);
-			name = 3.3_3;
-			path = ../../../../usr/local/Cellar/libffi/3.3_3;
-			sourceTree = "<group>";
-		};
-		DA4F1A5C26E6148C00952E8F /* .brew */ = {
-			isa = PBXGroup;
-			children = (
-				DA4F1A5D26E6148C00952E8F /* libffi.rb */,
-			);
-			path = .brew;
-			sourceTree = "<group>";
-		};
-		DA4F1A5F26E6148C00952E8F /* include */ = {
-			isa = PBXGroup;
-			children = (
-				DA4F1A6026E6148C00952E8F /* ffitarget.h */,
-				DA4F1A6126E6148C00952E8F /* ffi.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		DA4F1A6326E6148C00952E8F /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				DA4F1A6426E6148C00952E8F /* pkgconfig */,
-				DA4F1A6626E6148C00952E8F /* libffi.dylib */,
-				DA4F1A6726E6148C00952E8F /* libffi.7.dylib */,
-				DA4F1A6826E6148C00952E8F /* libffi.a */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		DA4F1A6426E6148C00952E8F /* pkgconfig */ = {
-			isa = PBXGroup;
-			children = (
-				DA4F1A6526E6148C00952E8F /* libffi.pc */,
-			);
-			path = pkgconfig;
-			sourceTree = "<group>";
-		};
-		DA4F1A6926E6148C00952E8F /* share */ = {
-			isa = PBXGroup;
-			children = (
-				DA4F1A6A26E6148C00952E8F /* man */,
-				DA4F1A7026E6148C00952E8F /* info */,
-			);
-			path = share;
-			sourceTree = "<group>";
-		};
-		DA4F1A6A26E6148C00952E8F /* man */ = {
-			isa = PBXGroup;
-			children = (
-				DA4F1A6B26E6148C00952E8F /* man3 */,
-			);
-			path = man;
-			sourceTree = "<group>";
-		};
-		DA4F1A6B26E6148C00952E8F /* man3 */ = {
-			isa = PBXGroup;
-			children = (
-				DA4F1A6C26E6148C00952E8F /* ffi_call.3 */,
-				DA4F1A6D26E6148C00952E8F /* ffi_prep_cif_var.3 */,
-				DA4F1A6E26E6148C00952E8F /* ffi_prep_cif.3 */,
-				DA4F1A6F26E6148C00952E8F /* ffi.3 */,
-			);
-			path = man3;
-			sourceTree = "<group>";
-		};
-		DA4F1A7026E6148C00952E8F /* info */ = {
-			isa = PBXGroup;
-			children = (
-				DA4F1A7126E6148C00952E8F /* libffi.info */,
-			);
-			path = info;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,23 +261,27 @@
 		DA4F1A4D26E611D200952E8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "cli-guile/cli-guile.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QG72S9L5L3;
 				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = (
-					"../guile-3.0.7",
-					"/usr/local/opt/bdw-gc/include",
-					/usr/local/opt/readline/include,
-					/usr/local/opt/gmp/include,
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = (
+					"-D_THREAD_SAFE",
+					"-I/usr/local/Cellar/guile/3.0.7/include/guile/3.0",
+					"-I/usr/local/opt/gmp",
+					"-I/usr/local/opt/gmp/include",
+					"-I/usr/local/opt/readline/include",
+					"-I/usr/local/opt/bdw-gc/include",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/usr/local/Cellar/gmp/6.2.1/lib,
-					"/usr/local/Cellar/bdw-gc/8.0.4_2/lib",
-					/usr/local/Cellar/libunistring/0.9.10/lib,
-					/usr/local/Cellar/gettext/0.21/lib,
+				OTHER_LDFLAGS = (
+					/usr/local/lib/libgc.a,
+					/usr/local/lib/libgmp.a,
+					"/usr/local/lib/libguile-3.0.a",
+					/usr/local/lib/libunistring.a,
 				);
-				OTHER_LDFLAGS = "../guile-3.0.7/libguile/.libs/libguile-3.0.a";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -406,23 +289,27 @@
 		DA4F1A4E26E611D200952E8F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "cli-guile/cli-guile.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QG72S9L5L3;
 				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = (
-					"../guile-3.0.7",
-					"/usr/local/opt/bdw-gc/include",
-					/usr/local/opt/readline/include,
-					/usr/local/opt/gmp/include,
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = (
+					"-D_THREAD_SAFE",
+					"-I/usr/local/Cellar/guile/3.0.7/include/guile/3.0",
+					"-I/usr/local/opt/gmp",
+					"-I/usr/local/opt/gmp/include",
+					"-I/usr/local/opt/readline/include",
+					"-I/usr/local/opt/bdw-gc/include",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/usr/local/Cellar/gmp/6.2.1/lib,
-					"/usr/local/Cellar/bdw-gc/8.0.4_2/lib",
-					/usr/local/Cellar/libunistring/0.9.10/lib,
-					/usr/local/Cellar/gettext/0.21/lib,
+				OTHER_LDFLAGS = (
+					/usr/local/lib/libgc.a,
+					/usr/local/lib/libgmp.a,
+					"/usr/local/lib/libguile-3.0.a",
+					/usr/local/lib/libunistring.a,
 				);
-				OTHER_LDFLAGS = "../guile-3.0.7/libguile/.libs/libguile-3.0.a";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
